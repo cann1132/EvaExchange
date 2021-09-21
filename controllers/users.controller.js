@@ -31,13 +31,13 @@ exports.createUser = (req,res) => {
 exports.registerUser = (req,res) => {
   
 };
+
+//
+exports.getUserRegistered = (req,res) => {
+  
+};
     
 //Checks registration status of the user.
 exports.bulkUserCreate = (req,res) => {
   
 };    
-
-//Checks registration status of the user.
-exports.userTransactions = (req,res) => {
-  
-}; 
