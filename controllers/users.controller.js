@@ -3,7 +3,7 @@ const Users = db.users;
 const Op = db.Sequelize.Op;
 
 //creates a user.
-exports.createUser = (req,res) => {
+exports.create = (req,res) => {
     if (!req.body.username){
         res.status(400).send({
             message:"Username must be provided."
@@ -16,7 +16,7 @@ exports.createUser = (req,res) => {
         registered: req.body.registered ? req.body.registered : false
     };
   
-    Users.createUser(user)
+    Users.create(user)
     .then(data => {
         res.send(data);
     })

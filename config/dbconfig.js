@@ -2,12 +2,12 @@ module.exports = {
     HOST: "localhost",
     USER: "evaexchange",
     PASSWORD: "eva",
-    DB: "eva",
+    DB: "eva123",
     dialect: "postgres",
     pool: {
       max: 5,
       min: 0,
-      acquire: 40000,
-      idle: 20000
+      acquire: 30000,
+      idle: 10000
     }
   };
